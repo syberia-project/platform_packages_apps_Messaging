@@ -193,5 +193,11 @@
     <dimen name="directory_header_padding_top">18dp</dimen>
     <dimen name="directory_header_padding_bottom">8dp</dimen>
     <dimen name="directory_header_text_size">14sp</dimen>
+    
+    <dimen name="audio_list_item_height">48dp</dimen>
+    <dimen name="audio_list_item_icon_size">20dp</dimen>
+    <dimen name="audio_list_item_icon_margin">26dp</dimen>
+    <dimen name="audio_list_item_text_margin">26dp</dimen>
+    <dimen name="audio_list_item_text_height">24dp</dimen>
 
 </resources>
