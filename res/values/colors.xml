@@ -148,6 +148,7 @@
 
     <color name="button_bar_action_button_text_color">#03a9f4</color>
     <color name="button_bar_cancel_button_text_color">#4d4d4d</color>
+    <color name="button_text">#000000</color>
 
     <color name="settings_list_text_primary">#4d4d4d</color>
     <color name="settings_list_text_secondary">#6d6d6d</color>
