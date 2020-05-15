@@ -309,12 +309,16 @@ public class ProcessPendingMessagesAction extends Action implements Parcelable {
         unregister();
 
         if (PhoneUtils.getDefault().isDefaultSmsApp()) {
-            queueActions(this);
+            if (!queueActions(this)) {
+                LogUtil.v(TAG, "ProcessPendingMessagesAction: rescheduling");
+                // TODO: Need to clear retry count here?
+                scheduleProcessPendingMessagesAction(true /* failed */, this);
+            }
         } else {
             if (LogUtil.isLoggable(TAG, LogUtil.VERBOSE)) {
                 LogUtil.v(TAG, "ProcessPendingMessagesAction: Not default SMS app; rescheduling");
             }
-            scheduleProcessPendingMessagesAction(true, this);
+            scheduleProcessPendingMessagesAction(true /* failed */, this);
         }
 
         return null;
