@@ -99,6 +99,7 @@
 
     <style name="BugleActionBarTitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
       <item name="android:textColor">@color/action_bar_title_text_color</item>
+      <item name="android:textColorDark">@color/action_bar_title_text_color_dark</item>
       <item name="android:textSize">@dimen/action_bar_text_size</item>
       <item name="android:lines">1</item>
     </style>

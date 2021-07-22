@@ -20,6 +20,7 @@
 
     <!--  Action bar -->
     <color name="action_bar_title_text_color">#ffffff</color>
+    <color name="action_bar_title_text_color_dark">#000000</color>
     <color name="action_bar_background_color">@color/primary_color</color>
     <color name="action_bar_background_color_dark">#121212</color>
     <color name="contextual_action_bar_background_color">#ffffff</color>
